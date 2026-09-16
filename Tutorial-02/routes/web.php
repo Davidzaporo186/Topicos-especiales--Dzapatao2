@@ -17,3 +17,6 @@ Route::put('/products/{id}', [ProductController::class, 'update']);
 
 Route::post('/products/{id}/comments', [ProductController::class, 'storeComment']);
 Route::delete('/products/{id}', [ProductController::class, 'destroy']);
+Route::get('/cart', 'App\Http\Controllers\CartController@index')->name("cart.index");
+Route::get('/cart/add/{id}', 'App\Http\Controllers\CartController@add')->name("cart.add");
+Route::get('/cart/removeAll/', 'App\Http\Controllers\CartController@removeAll')->name("cart.removeAll");
