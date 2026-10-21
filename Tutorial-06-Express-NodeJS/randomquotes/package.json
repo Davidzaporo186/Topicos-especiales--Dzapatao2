@@ -1,0 +1,16 @@
+{
+  "name": "randomquotes",
+  "version": "1.0.0",
+  "description": "Tutorial 06: servidor Express que muestra frases aleatorias y se despliega con Docker en Google Cloud.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "license": "UNLICENSED"
+}
